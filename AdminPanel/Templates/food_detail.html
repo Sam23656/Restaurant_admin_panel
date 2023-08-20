@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detail {{ food }}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<div class="flex flex-col justify-center items-center pt-10">
+            <div class="mb-5 mt-5 rounded-md bg-zinc-700 w-80 h-86 flex flex-col justify-center items-center">
+            <p class=" p-5 text-2xl">Name - {{ food }}</p>
+            <p class="p-5 text-2xl">Category - {{food.category}}</p>
+            <p class="p-5 text-2xl text-center">Description: <br> {{food.description}}</p>
+            <p class="p-5 text-2xl">Price - {{ food.price }}</p>
+            <p class="p-5 text-2xl">Slug - {{ food.slug }}</p>
+            </div>
+        </div>
+</body>
+</html>
